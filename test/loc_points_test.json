@@ -1,0 +1,53 @@
+{
+  "points": [
+    {
+      "name": "Hecktor 1",
+      "neighbors": ["Hecktor 2"],
+      "color": "Blue",
+      "X": 0,
+      "Y": 0
+    },
+    {
+      "name": "Hecktor 2",
+      "neighbors": ["Hecktor 1", "Hecktor 3"],
+      "color": "Red",
+      "X": 0,
+      "Y": 10
+    },
+    {
+      "name": "Hecktor 3",
+      "neighbors": ["Hecktor 2", "Hecktor 4", "Hecktor 6"],
+      "color": "Blue",
+      "X": 10,
+      "Y": 10
+    },
+    {
+      "name": "Hecktor 4",
+      "neighbors": ["Hecktor 3", "Hecktor 7"],
+      "color": "Red",
+      "X": 20,
+      "Y": 10
+    },
+    {
+      "name": "Hecktor 5",
+      "neighbors": ["Hecktor 6"],
+      "color": "Blue",
+      "X": 20,
+      "Y": 0
+    },
+    {
+      "name": "Hecktor 6",
+      "neighbors": ["Hecktor 3", "Hecktor 5"],
+      "color": "Blue",
+      "X": 10,
+      "Y": 0
+    },
+    {
+      "name": "Hecktor 7",
+      "neighbors": ["Hecktor 4"],
+      "color": "Blue",
+      "X": 30,
+      "Y": 10
+    }
+  ]
+}
