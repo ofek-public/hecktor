@@ -1,6 +1,7 @@
 import json
 
 LOC_POINTS_FILE = "loc_points.json"
+UNIT = 10
 
 class Actions:
 	GO = 'Go',
@@ -70,9 +71,9 @@ class Navigator:
 		times = 0
 		while curr_direction != needed_direction:
 			if curr_direction[0] >= 0 and curr_direction[1] >= 0:
-				curr_direction = ((curr_direction[0] + 10) % 20, (curr_direction[1] - 10) % -20)
+				curr_direction = ((curr_direction[0] + UNIT) % 2*UNIT, (curr_direction[1] - UNIT) % -2*UNIT)
 			else:
-				curr_direction = ((curr_direction[0] - 10) % -20, (curr_direction[1] - 10) % 20)
+				curr_direction = ((curr_direction[0] - UNIT) % -2*UNIT, (curr_direction[1] - UNIT) % 2*UNIT)
 			times += 1
 		return (Actions.ROTATE_RIGHT, times)
 
